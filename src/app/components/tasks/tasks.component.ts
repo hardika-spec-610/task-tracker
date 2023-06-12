@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Task } from 'src/app/Task';
-import { TASKS } from 'src/app/mock-tasks';
+import { Task } from '../../Task';
+import { TaskService } from '../../services/task.service';
 
 @Component({
   selector: 'app-tasks',
@@ -8,6 +8,9 @@ import { TASKS } from 'src/app/mock-tasks';
   styleUrls: ['./tasks.component.css']
 })
 export class TasksComponent {
-  tasks: Task[] = TASKS
-
-}
+  tasks: Task[] = []
+  constructor(private tasksService: TaskService) { }
+  ngOnInit(): void {
+    this.tasksService.getTasks().subscribe((tasks) => this.tasks = tasks);
+  } // void this paricular fuction dosen't return anything
+} 
