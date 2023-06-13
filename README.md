@@ -10,18 +10,31 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Create tasks: Users can add tasks by clicking the "Add" button. A form will appear where they can enter the task details such as the task name and reminder.
+- Remove reminders: Users can remove the reminder for a task by double-clicking on the task. The reminder will be cleared, but the task will remain in the list.
+- Delete tasks: Users can delete a task by clicking the "Delete" button next to the task. The task will be permanently removed from the list.
+- Navigate to the about page: Users can navigate to the about page by clicking the "About" link in the footer. The about page provides information about the task tracker application
 
-## Running unit tests
+## Getting Started
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To get started with the task tracker project, follow these steps:
 
-## Running end-to-end tests
+1. Clone the repository: git clone `https://github.com/hardika-spec-610/task-tracker.git`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. Navigate to the project directory: `cd task-tracker`
 
-## Further help
+3. Install the dependencies: `npm install`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+4. Start the development server: `ng serve`
+
+5. Open your browser and visit: `http://localhost:4200/`
+
+## Images
+
+![image](./src/assets/tracker1.png)
+
+![image](./src/assets/tracker2.png)
+
+![image](./src/assets/tracker3.png)
