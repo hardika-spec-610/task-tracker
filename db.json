@@ -23,6 +23,12 @@
       "day": "13th June at 15:00 Uhr",
       "reminder": true,
       "id": 4
+    },
+    {
+      "text": "Other test",
+      "day": "13th June at 15:00 Uhr",
+      "reminder": true,
+      "id": 5
     }
   ]
 }
